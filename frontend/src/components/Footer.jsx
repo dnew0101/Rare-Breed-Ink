@@ -1,8 +1,9 @@
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Footer = () => {
   return (<>
-    <footer className='bg-gray-800 text-white p-6'>
+    <footer className='fixed bottom-0 w-full bg-black text-white p-6'>
       <div className='container mx-auto flex justify-between items-center'>
         <div>
           <h2 className='font-bold text-xl mb-2'>Rare Breed Ink</h2>
@@ -10,15 +11,18 @@ const Footer = () => {
           <p>Put Phone Number Here!</p>
         </div>
         <div>
-          <a href="" className='text-white mr-4'>Facebook Placeholder... Add Icon</a>
-          <a href="" className='text-white'>Instagram Placeholder... Add Icon</a>
+          <a href="https://www.instagram.com/rarebreedinkstudio/" className='text-white mr-4'>
+          <i className="fab fa-instagram-square fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/rarebreedink66/" className='text-white'>
+          <i className="fab fa-facebook-square fa-2x"></i>
+          </a>
         </div>
         <div>
-          <p>&copy; {new Date().getFullYear()} Rare Breed Ink. All rights reserved.</p>
+          <p className="text-xs">&copy; {new Date().getFullYear()} Rare Breed Ink. All rights reserved.</p>
         </div>
       </div>
     </footer>
-    <div>Footer</div>
   </>)
 }
 

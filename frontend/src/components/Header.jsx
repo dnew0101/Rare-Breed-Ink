@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Step 1: Import Link
+import logo from '../assets/logo.jpeg';
 
 const Header = () => {
   return (
-    <header className='flex justify-between items-center p-6 bg-gray-800 text-white'>
+    <header className='fixed top-0 w-full flex justify-between items-center p-6 bg-black text-white'>
       <div>
-        <img src="/path/to/shop/logo" alt="Rare Breed Ink Logo" className='h-8' />
+        <img src={logo} alt="Rare Breed Ink Logo" className='h-8' />
       </div>
       <nav>
         <ul className='flex space-x-4'>
