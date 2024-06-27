@@ -1,14 +1,16 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Button from '../components/Button';
 
-const Home = () => {
+//default to mobile first, then apply different styles via "md" classes for non-mobile devices
+const Home = (props) => {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen bg-gray-100'>
       <Header />
-      <main className='p-4'>
-        <h1 className='text-3xl font-bold text-center text-gray-800 mb-2'>Welcome to Our Website!</h1>
-        <p className='text-center text-gray-600'>This is the main section of our homepage, designed to catch your attention.</p>
+      <main className='w-full h-full max-w-none max-h-none mx-0'>
+        <section className='heroSection justify-center align-middle'>
+        </section>
       </main>
       <Footer />
     </div>
